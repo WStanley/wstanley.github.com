@@ -21,14 +21,26 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
-	color: #b3b9bf;
-	background: #f9f9f9;
+	color: #111;
+	background: #f5f5f5;
+	text-align: center;
 }
 
-a {
-	color: #888;
-	text-decoration: none;
+h1{
+	font-size: 3em;
 }
+
+
+a {
+	color: #111;
+	text-decoration: none;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+	-ms-transition: all .2s;
+	transition: all .2s;
+}
+
 
 a:hover,
 a:active {

@@ -24,6 +24,10 @@
 	max-width: 100%;
 	display: block;
 	position: relative;
+	-webkit-animation: in 2.8s;
+  -moz-animation: in 2.8s;
+  -o-animation: in 2.8s;
+  animation: in 2.8s;
 }
 
 .grid figcaption {
@@ -31,14 +35,15 @@
 	top: 0;
 	left: 0;
 	padding: 20px;
-	background: rgba(245, 245, 245, 0.5);
-	color: #111;
+	background: rgba(17, 17, 17, 0.8);
+	color: whitesmoke;
 }
 
 .grid figcaption h3 {
 	margin: 0;
 	padding: 0;
-	color: #111;
+	color: whitesmoke;
+	font-weight: 100;
 }
 
 .grid figcaption span:before {
@@ -68,6 +73,7 @@
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
 	transition: transform 0.3s, opacity 0.3s;
+
 }
 
 .no-touch .cs-style-1 figure:hover figcaption,
@@ -91,8 +97,28 @@
 	margin-top: 3px;
 }
 
+@-webkit-keyframes in {
+  from {opacity: 0; -webkit-transform: translateY(0px);}
+  to {opacity: 1; -webkit-transform: translateY(0);}
+}
 
-@media screen and (max-width: 31.5em) {
+@-moz-keyframes in {
+  from {opacity: 0; -moz-transform: translateY(0px);}
+  to {opacity: 1; -moz-transform: translateY(0);}
+}
+
+@-o-keyframes in {
+  from {opacity: 0; -o-transform: translateY(0px);}
+  to {opacity: 1; -o-transform: translateY(0);}
+}
+
+@keyframes in {
+  from {opacity: 0; transform: translateY(0px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+
+@media screen and (max-width: 700px) {
 	.grid {
 		padding: 10px 10px 100px 10px;
 	}

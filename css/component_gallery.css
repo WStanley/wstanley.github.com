@@ -1,6 +1,6 @@
 .grid {
 	padding: 20px 20px 100px 20px;
-	max-width: 100%;
+	max-width: 900px;
 	margin: 0 auto;
 	list-style: none;
 	text-align: center;
@@ -8,7 +8,7 @@
 
 .grid li {
 	display: inline-block;
-	width: 100%;
+	width: 390px;
 	padding: 1px;
 	text-align: center;
 	position: relative;
@@ -25,10 +25,10 @@
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	-webkit-animation: in 2.8s;
-  -moz-animation: in 2.8s;
-  -o-animation: in 2.8s;
-  animation: in 2.8s;
+	 -webkit-animation: in 2.5s;
+  -moz-animation: in 2.5s;
+  -o-animation: in 2.5s;
+  animation: in 2.5s;
 }
 
 .grid figcaption {
@@ -74,6 +74,7 @@
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
 	transition: transform 0.3s, opacity 0.3s;
+ 
 }
 
 .no-touch .cs-style-1 figure:hover figcaption,
@@ -115,6 +116,17 @@
   from {opacity: 0; transform: translateY(0px);}
   to {opacity: 1; transform: translateY(0);}
 }
+
+@media screen and (max-width: 900px){
+	.grid li {
+	display: inline-block;
+	width: 300px;
+	padding: 1px;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+}
+} 
 
 @media screen and (max-width: 700px) {
 	.grid {

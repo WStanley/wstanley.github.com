@@ -664,7 +664,11 @@ nav ul li {
   -o-transition: padding .05s linear;
   transition: padding .05s linear;
 }
+
 nav ul li.drop {
+  position: relative;
+}
+nav ul li.drop:active {
   position: relative;
 }
 nav ul > li {

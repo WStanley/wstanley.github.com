@@ -826,6 +826,30 @@ nav ul li {
   letter-spacing: 1.5px;
 }
 
+
+@media screen and (min-width: 750px){
+
+	#desktop{
+		display: block;
+	}
+	#mobile{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /* styles go here */
+    #desktop{
+	display: none;
+}
+#mobile{
+	display: block;
+}
+nav{
+	margin-top: -70px;
+}
+}
+
 @media screen and (max-width: 700px){
 	nav ul li {
   font-family: 'Montserrat', sans-serif;

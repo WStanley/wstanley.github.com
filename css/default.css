@@ -826,7 +826,7 @@ nav ul li {
   letter-spacing: 1.5px;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 700px){
 	nav ul li {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;

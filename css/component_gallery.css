@@ -3,8 +3,11 @@
 	max-width: 900px;
 	margin: 0 auto;
 	list-style: none;
-	text-align: center;
+	text-align: right;
+	top: -200px;
+	position: relative;
 }
+
 
 .grid li {
 	display: inline-block;
@@ -87,7 +90,8 @@
 }
 
 .cs-style-1 figcaption h3 {
-	margin-top: 40%;
+	margin-top: 70%;
+	font-size: 25px;
 }
 
 .cs-style-1 figcaption span {
@@ -117,7 +121,18 @@
   to {opacity: 1; transform: translateY(0);}
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1300px){
+	.grid li {
+	display: inline-block;
+	width: 350px;
+	padding: 1px;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+}
+} 
+
+@media screen and (max-width: 1100px){
 	.grid li {
 	display: inline-block;
 	width: 300px;
@@ -128,9 +143,24 @@
 }
 } 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
 	.grid {
 		padding: 10px 10px 100px 10px;
+			top: 0px;
+	position: relative;
+	}
+	.grid li {
+		width: 100%;
+		min-width: 300px;
+	}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 800px){
+	.grid {
+		padding: 10px 10px 100px 10px;
+			top: 0px;
+	position: relative;
 	}
 	.grid li {
 		width: 100%;

@@ -4,6 +4,7 @@ img{
 	-o-transition: all .2s;
 	-ms-transition: all .2s;
 	transition: all .2s;
+	max-height: 350px;
 }
 
 img:hover{
@@ -68,7 +69,7 @@ img:hover{
 	padding: 5px;
 }
 .grid2 li img {
-	max-height: 60%;
+	max-height: 350px;
 }
 
 .grid2 figure {
@@ -162,6 +163,13 @@ img:hover{
 		margin: auto;
 		display: block;
 	}
+		img{
+
+	max-height: 100%;
+}
+.grid2 li img {
+	max-height: 100%;
+}
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
@@ -237,5 +245,13 @@ img:hover{
 		margin: auto;
 		display: block;
 	}
+	img{
+
+	max-height: 100%;
+}
+.grid2 li img {
+	max-height: 100%;
+}
+
 }
 }

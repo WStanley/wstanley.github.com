@@ -31,13 +31,15 @@ img:hover{
 	padding: 5px;
 	text-align: right;
 	position: relative;
-	float: right;
+	float: left;
+	height: 305px;
 
 }
 .grid li img{
 
-	 width: 100% !important;
-  height: auto !important;
+	 max-width: 100% !important;
+  max-height: 300px; !important;
+  margin:0 auto;
 
 
 }
@@ -67,18 +69,19 @@ img:hover{
 
 .grid2 li {
 	display: inline-block;
-	width: 400px;
+	width: 420px;
 	margin: 0;
-	float: left;
-	text-align: left;
-	position: relative;
-
 	padding: 5px;
+	text-align: right;
+	position: relative;
+	float: right;
+	height: 305px;
 }
 .grid2 li img{
 
-	 width: 100% !important;
-  height: auto !important;
+	max-width: 100% !important;
+  max-height: 300px !important;
+  margin:0 auto;
 
 }
 
@@ -107,19 +110,20 @@ img:hover{
 
 .grid3 li {
 	display: inline-block;
-	width: 380px;
+	width: 420px;
 	margin: 0;
 	padding: 5px;
-	float: right;
-	text-align: left;
+	text-align: right;
 	position: relative;
+	float: right;
+	height: 305px;
 
 }
 .grid3 li img{
 
-	 width: 100% !important;
-  height: auto !important;
- 
+	 max-width: 100% !important;
+  max-height: 300px !important;
+  margin:0 auto;
 
 }
 
